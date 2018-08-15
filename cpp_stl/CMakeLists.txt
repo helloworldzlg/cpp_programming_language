@@ -12,3 +12,6 @@ add_executable(list_contact sequential_container/list_contact.cpp)
 
 # set demo
 add_executable(set_demo associative_container/set_demo.cpp)
+
+# map demo
+add_executable(map_demo associative_container/map_demo.cpp)
