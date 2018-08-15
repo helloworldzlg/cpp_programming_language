@@ -96,11 +96,20 @@ void example_05()
 {
     vector<int> vecInts;
 
+    //观察增长的过程中大小和容量的变化
     for (int i = 0; i < 32; ++i)
     {
         cout << "capacity: " << vecInts.capacity() << endl;
         cout << "size: " << vecInts.size() << endl;
         vecInts.push_back(i);
+    }
+
+    //观察减少的过程中大小和容量的变化
+    for (int i = 0; i < 32; ++i)
+    {
+        cout << "capacity: " << vecInts.capacity() << endl;
+        cout << "size: " << vecInts.size() << endl;
+        vecInts.pop_back();
     }
 }
 
